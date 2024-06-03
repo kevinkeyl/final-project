@@ -4,8 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        nav {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+        .nav-right a {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+        .nav-right img {
+            width: 30px;
+            height: 30px;
+        }
+        #site-search {
+            margin-left: 10px;
+            text-align: center;
+        }
+        .product-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* 控制每個 h2 元素之間的間距 */
+            background-color: lightgray; /* 背景色，便於觀察 */
+            padding: 10px; /* 增加內邊距 */
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: burlywood;
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 4px 0;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-form input[type="search"] {
+            padding: 5px;
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px ;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .menu-icon {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 10%;
+                position: absolute;
+                top: 10%;
+                bottom: 10%;
+                left:10%;
+                right: 10%;
+                background-color: white;
+                padding: 10px 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            
+        }
+        
+        
+    </style>
 </head>
 <body>
-    snkks
+    <nav style="background-color: azure;">
+        
+        <header class="header">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+                
+            </div>
+            <h1 style="margin: 20px;">Korean shop</h1>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">商品類別1</a></li>
+                <li><a href="#">商品類別2</a></li>
+                <li><a href="#">商品類別3</a></li>
+                <li><a href="#">商品類別4</a></li>
+                <li><a href="#">商品類別5</a></li>
+                <li><a href="#">商品類別6</a></li>
+                <li><a href="#">商品類別7</a></li>
+            </ul>
+        </header>
+        
+        <div class="nav-right">
+            <a href=".html" style="margin: 30px; ">
+                <img src="image/OIP (1).jpg" alt="no" style="width: 30px;">登入/註冊
+            </a>
+            <a href="car.html" style="text-align: right;">
+                <img src="image/68b75cd2f2c1b178cbbce1ed2fd9b3b7_31508_800_747.jpg!con" alt="no" style="width: 30px;">購物車
+            </a>
+            <a href="search.html">
+                <img src="image/search.jpg" alt="no" style="width: 30px;">搜尋
+                
+            </a>
+        </div>
+        
+        
+    </nav>
+    <div class="product">
+        <h1 style="text-align: center;">Korea shop韓國代購</h1><br>
+        <div class="product-nav">
+            <h2><a href="">商品瀏覽</a></h2>
+            <h2><a href="aboutus.html">關於我們</a></h2>
+            <h2><a href="question.html">常見問題</a></h2>
+            <h2><a href="">會員資訊</a></h2>
+        </div>  
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+        
+    </script> 
 </body>
 </html>
