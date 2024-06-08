@@ -62,7 +62,8 @@ body {
     list-style: none; /* 移除列表項的預設樣式 */
 }
 #tab > ul > li {
-    margin-left: 10px; /* 每個列表項之間的間距 */
+    margin-left: 20px; /* 每個列表項之間的間距 */
+    margin-right: 20px;
 }
 
 /* 頁籤文字的樣式 */
