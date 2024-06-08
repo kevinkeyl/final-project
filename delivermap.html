@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        input{
+            margin: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>送貨資訊</h3>
+    <h4>付款方式:</h4>
+    <select name="payment" id="payment">
+        <option value="credit_card">信用卡</option>
+        <option value="cash">現金</option>
+        <option value="shop">貨到付款</option>
+        <option value="line_pay">Line Pay</option>
+        <option value="apple_pay">Apple Pay</option>
+        <option value="street">街口支付</option>
+    </select><br>
+    <h4>送貨地址:</h4>
+    <input type="text" placeholder="請輸入地址"><br>
+    <h4>客戶資訊:</h4>
+    <input type="text" placeholder="姓氏"><br>
+    <input type="text" placeholder="名字"><br>
+    <button type="submit" id="inside" onclick="an()"><a href="b1.html">確認送出</a></button>
+    </div>
+    <script>
+         function an(){
+            alert("訂單完成! 歡迎下次光臨");
+            
+        }
+    </script>
+</body>
+</html>

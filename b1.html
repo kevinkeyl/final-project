@@ -35,9 +35,10 @@
         .product-nav {
             display: flex;
             justify-content: center;
-            gap: 20px; /* 控制每個 h2 元素之間的間距 */
+            gap: 100px; /* 控制每個 h2 元素之間的間距 */
             background-color: lightgray; /* 背景色，便於觀察 */
-            padding: 10px; /* 增加內邊距 */
+            padding: 3px; /* 增加內邊距 */
+            width: 100%;
         }
         
         .header {
@@ -108,6 +109,7 @@
                 right: 10%;
                 background-color: white;
                 padding: 10px 0;
+                z-index: 100;
             }
 
             .nav-links.active {
@@ -149,6 +151,7 @@
         </header>
         
         <div class="nav-right">
+            <h1 style="text-align: center;">Korea shop韓國代購</h1><br>
             <a href=".html" style="margin: 30px; ">
                 <img src="image/OIP (1).jpg" alt="no" style="width: 30px;">登入/註冊
             </a>
@@ -164,12 +167,14 @@
         
     </nav>
     <div class="product">
-        <h1 style="text-align: center;">Korea shop韓國代購</h1><br>
+       
         <div class="product-nav">
-            <h2><a href="">商品瀏覽</a></h2>
+            <h2><a href="#new">新上架</a></h2>
+            <h2><a href="#hot_sale">熱門促銷</a></h2>
+            <h2><a href="#hot_product">熱銷商品</a></h2>
             <h2><a href="aboutus.html">關於我們</a></h2>
             <h2><a href="question.html">常見問題</a></h2>
-            <h2><a href="">會員資訊</a></h2>
+            <h2><a href="form.html">會員資訊</a></h2>
         </div>  
     </div>
 
@@ -205,7 +210,7 @@
             </div>
         </div>
 
-        <div class="aside">
+        <div class="aside" id="hot_sale">
             <h1>熱門促銷</h1>
             <div class="slideshow-container slideshow-container-2">
                 <div class="mySlides mySlides-2 fade">
@@ -239,7 +244,7 @@
 
     <br>
         
-    <main class="new_product">
+    <main class="new_product" id="new" >
         <h1>新上架</h1>
         <div class="image_row">
             <img src="image/hat_Lee.jpg">
@@ -254,7 +259,7 @@
 
     <br>
 
-    <main class="hot_items">
+    <main class="hot_items" id="hot_product">
         <h1>熱銷商品</h1>
         <article>
             <div class="product">
