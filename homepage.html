@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -39,59 +39,53 @@
         <a href="question.html">常見問題</a>
         <a href="form.html">會員資訊</a> 
     </div>
-    
-    <main class="advertise">
-        <div class="article">
-            <div class="slideshow-container slideshow-container-1">
-                <div class="mySlides mySlides-1 fade">
-                    <a href="#"><img src="img/ad-1.jpg" style="width: 80%"></a>
+    <main>
+        <div class="advertise">
+            <div class="article">
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <a href="#"><img src="img/ad-1.jpg" style="width: 80%"></a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="#"><img src="img/ad-2.jpg" style="width: 80%"></a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="#"><img src="img/ad-3.jpg" style="width: 80%"></a>
+                    </div>
+                    <div class="slide fade">
+                        <a href="#"><img src="img/ad-4.jpg" style="width: 80%"></a>
+                    </div>
+                    <br>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
-                <div class="mySlides mySlides-1 fade">
-                    <a href="#"><img src="img/ad-2.jpg" style="width: 80%"></a>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="showSlides(1)"></span>
+                    <span class="dot" onclick="showSlides(2)"></span>
+                    <span class="dot" onclick="showSlides(3)"></span>
+                    <span class="dot" onclick="showSlides(4)"></span>
                 </div>
-                <div class="mySlides mySlides-1 fade">
-                    <a href="#"><img src="img/ad-3.jpg" style="width: 80%"></a>
-                </div>
-                <div class="mySlides mySlides-1 fade">
-                    <a href="#"><img src="img/ad-4.jpg" style="width: 80%"></a>
-                </div>
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-            </div>
-            <br>
-            <div style="text-align: center;">
-                <span class="dot dot-1" onclick="currentSlide(1, 1)"></span>
-                <span class="dot dot-1" onclick="currentSlide(2, 1)"></span>
-                <span class="dot dot-1" onclick="currentSlide(3, 1)"></span>
-                <span class="dot dot-1" onclick="currentSlide(4, 1)"></span>
             </div>
         </div>
-    </main>
-    
- 
-    
-    <main class="new_product" id="new" >
-        <h1>新上架</h1>
-        <div id="ContentDetail" class="detail"></div>
-        <div class="see_more">
-            <a href="#查看更多">查看更多</a>
+        <div class="new_product" id="new" >
+            <h1>新上架</h1>
+            <div id="ContentDetail" class="detail"></div>
+            <div class="see_more">
+                <a href="#查看更多">查看更多</a>
+            </div>
         </div>
-    </main>
-    
- 
-    
-    <main class="hot_items" id="hot_product">
-        <h1>熱銷商品</h1>
-            <div class="sellproduct">
-    
+        <div class="hot_items" id="hot_product">
+            <h1>熱銷商品</h1>
+            <div class="sellproduct"> 
                 <div class="photo">
                     <img src="img/p4-1.jpg">
                 </div>
-                <a href="#"><div class="text">
-                    <p>經典WAL 刺繡老帽&emsp;&emsp;<p>
-                    <p class="amount">本月銷量 130</p>
-                    <p class="price">$ 880</p></a>
-                </div>
+                <a href="#">
+                    <div class="text">
+                        <p>經典WAL 刺繡老帽&emsp;&emsp;<p>
+                        <p class="amount">本月銷量 130</p>
+                        <p class="price">$ 880</p></a>
+                    </div>
             </div>
             <div class="sellproduct">
                 <div class="photo">
@@ -113,30 +107,24 @@
                     <p class="price">$ 550</p></a>
                 </div>
             </div>
-            
-        
-        
-        
-        <div class="see_more">
-            <a href="#查看更多">查看更多</a>
+                    
+            <div class="see_more">
+                <a href="#查看更多">查看更多</a>
+            </div>
         </div>
-    </main>
     
-    <script src="b1.js"></script>
-    <button onclick="topFunction()" id="topBtn" title="Go to top">
-        <img src="image/top.png" alt="Top">
-    </button>
-    <script src="top.js"></script>
-    <script>
-        function toggleMenu() {
-            var navLinks = document.getElementById("navLinks");
-            navLinks.classList.toggle("active");
-        }
-        
-    </script> 
-     <footer>
+        <script>
+            function toggleMenu() {
+                var navLinks = document.getElementById("navLinks");
+                navLinks.classList.toggle("active");
+            }
+
+        </script>          
+    </main>
+    <footer>
         <p>Copyrgiht @ 2024  </p>
         <p>Tel :</p> 
     </footer>
 </body>
 </html>
+        
