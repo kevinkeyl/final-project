@@ -1,36 +1,12 @@
 * {
     box-sizing: border-box;
 }
-
-#topBtn {
-    display: none; /* 預設隱藏按鈕 */
-    position: fixed; /* 固定在畫面右下角 */
-    bottom: 20px;
-    right: 30px;
-    z-index: 99; /* 使按鈕顯示於其他元素之上 */
-    border: none;
-    outline: none;
-    background-color: transparent; /* 背景顏色設為透明 */
-    cursor: pointer;
-    padding: 0;
-    width: 50px; /* 設定按鈕寬度 */
-    height: 50px; /* 設定按鈕高度 */
-}
-#topBtn img {
-    width: 100%; /* 調整圖片大小以適應按鈕 */
-    height: 100%;
-}
-#topBtn:hover {
-    opacity: 0.7; /* 鼠標懸停時降低按鈕透明度 */
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FAF9EC;
 }
-
 .navbar {
     width: 100%;
     background-color: #E8EAD9;
@@ -75,8 +51,6 @@ body {
     width: 150px;
     padding: 5px;
 }
-
-
 #site-search {
     margin-left: 10px;
     text-align: center;
@@ -100,49 +74,25 @@ body {
     background-color: #CDD1BF;
     border-radius: 5px;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: burlywood;
-}
 
-.menu-icon {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-icon div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-}
-
-.search-form input[type="search"] {
-    padding: 5px;
-    margin-left: 10px;
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
     text-align: center;
 }
-
+.slide {
+    display: none;
+    text-align: center;
+}
 
 .content {
     padding: 20px;
 }
-
-@media (min-width: 768px) {
-    .menu-icon {
-        display: flex;
-    }
-    
+.show {
+    display: block;
 }
+
 .advertise {
     display: flex;
     justify-content: center;
@@ -153,23 +103,6 @@ body {
 .article {
     width: 49%;
     padding-top: 20px;
-    text-align: center;
-}
-
-
-.mySlides {
-    display: none;
-}
-
-img {
-    vertical-align: middle;
-    border-radius: 15px;
-}
-
-.slideshow-container {
-    max-width: 800px;
-    position: relative;
-    margin: auto;
     text-align: center;
 }
 
@@ -187,7 +120,6 @@ img {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 .prev {
     left: 0;
     border-radius: 0 3px 3px 0;
@@ -201,12 +133,6 @@ img {
 .prev:hover, .next:hover {
     background-color: rgba(61, 57, 57, 0.8);
 }
-
-.dots-container {
-    text-align: center;
-    padding: 20px;
-}
-
 .dot {
     cursor: pointer;
     height: 15px;
@@ -215,28 +141,32 @@ img {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: 0.6s ease;
 }
-
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
-
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
-
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
-
+img {
+    vertical-align: middle;
+    border-radius: 15px;
+}
 .new_product {
     padding: 20px;
     text-align: center;
 }
-
 .image_row {
     display: flex;
     justify-content: center;
@@ -244,20 +174,17 @@ img {
     
 
 }
-
 .image_row img {
     width: 250px;
     border-radius: 15px;
     margin: 20px 30px;
    
 }
-
 .see_more {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
 .see_more a {
     font-size: 18px;
     text-decoration: none;
@@ -268,8 +195,6 @@ img {
     border-radius: 5px;
     
 }
-
-
 .hot_items {
     text-align: center;
 }
@@ -280,8 +205,6 @@ article {
     text-align: center;
 
 }
-
-
 .sellproduct {
     display: flex;
     justify-content: center;
@@ -294,7 +217,6 @@ article {
 .photo img {
     width: 100%; 
 }
-
 .photo {
     width: 250px; 
     height: auto; 
@@ -307,8 +229,7 @@ article {
     text-align: left;
     color: #333;
     font-size: 18px;
-    padding-bottom: 0;
-    
+    padding-bottom: 0;  
 }
 .text a {
     text-decoration: none !important;
@@ -318,7 +239,6 @@ article {
     color: #828282;
     font-size: 18px;
 }
-
 .price {
     color: #ac5a5a;
     font-weight: bold;
@@ -331,12 +251,10 @@ footer{
     padding: 10px;
     font-family: Arial;
 }
-
 .card-img-top {
     width: 100%; 
     height: auto; 
 }
-
 .detail {
     width: 70%;
     margin: 0 auto;
@@ -358,7 +276,6 @@ footer{
     color: #333; 
     font-size: 18px;
 }
-
 .card-price {
     color: #AC5A5A; 
     font-weight: bold;
