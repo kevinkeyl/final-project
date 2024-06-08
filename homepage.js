@@ -1,70 +1,31 @@
-let slideIndex1 = 0;
-let slideIndex2 = 0;
-
-function showSlides(slideSet) {
-    let i;
-    let slides, dots;
-    if (slideSet === 1) {
-        slides = document.getElementsByClassName("mySlides-1");
-        dots = document.getElementsByClassName("dot-1");
-        slideIndex1++;
-        if (slideIndex1 > slides.length) { slideIndex1 = 1 }
-        if (slideIndex1 < 1) { slideIndex1 = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex1 - 1].style.display = "block";
-        dots[slideIndex1 - 1].className += " active";
-    } else {
-        slides = document.getElementsByClassName("mySlides-2");
-        dots = document.getElementsByClassName("dot-2");
-        slideIndex2++;
-        if (slideIndex2 > slides.length) { slideIndex2 = 1 }
-        if (slideIndex2 < 1) { slideIndex2 = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex2 - 1].style.display = "block";
-        dots[slideIndex2 - 1].className += " active";
+let slideIdx = 1;
+let autoplay;
+function changeSlide(ctrl) {
+    showSlides(slideIdx + ctrl);
+}
+function showSlides(idx) {
+    slideIdx = idx;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if(slideIdx > slides.length) {
+        slideIdx = 1;
+    }else if(slideIdx == 0) {
+        slideIdx = slides.length;
     }
-}
-
-function plusSlides(n, slideSet) {
-    if (slideSet === 1) {
-        slideIndex1 += n - 1;
-        showSlides(1);
-    } else {
-        slideIndex2 += n - 1;
-        showSlides(2);
+    for(let i=0; i<slides.length; i++) {
+        slides[i].className = slides[i].className.replace(" show", "")
+        dots[i].className = dots[i].className.replace(" active", "");
     }
+    slides[slideIdx - 1].className += " show";
+    dots[slideIdx - 1].className += " active";
+    setAutoPlay();
 }
-
-function currentSlide(n, slideSet) {
-    if (slideSet === 1) {
-        slideIndex1 = n - 1;
-        showSlides(1);
-    } else {
-        slideIndex2 = n - 1;
-        showSlides(2);
-    }
+function setAutoPlay() {
+    if(autoplay != undefined) clearInterval(autoplay);
+    autoplay = setInterval(function() {
+        changeSlide(1);
+    }, 2500);
 }
-
-function autoSlides() {
-    showSlides(1);
-    showSlides(2);
-    setTimeout(autoSlides, 3000); // Change image every 3 seconds
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    autoSlides();
-});
-
 const itemObj = {
     0: {name: 'LEE 24SS 老帽', price: '950', img: 'img/p4-2.jpg', url: '#'},
     1: {name: 'Marithe 襪子三入組', price: '680', img: 'img/p4-4.jpg', url: '#'},
@@ -91,5 +52,7 @@ function newCardItem(item) {
     return temp;
 }
 window.onload = function() {
+    showSlides(slideIdx);
     generateItems(itemObj, 'ContentDetail');
+    
 };
