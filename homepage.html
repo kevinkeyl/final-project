@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon-container search-container input" style="padding-left: 30px;">
+            <img src="img/search.png" class="icon">
+            <input type="text" placeholder="關鍵字搜尋">
+        </div>
+        
+        
+        <div class="nav-links">
+            <a href="#">
+                <div class="icon-container">
+                    <img src="img/usericon.png" class="icon">登入 / 註冊
+                </div>
+            </a>
+            <a href="#">
+                <div class="icon-container">
+                    <img src="img/shopicon.png" class="icon" >購物車
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="shoptitle">Korean Shop</div>
+    <div class="product">
+        <a href="#new">新上架</a>
+        <a href="#hot_product">熱銷商品</a>
+        <a href="#hot_product">商品瀏覽</a>
+        <a href="aboutus.html">關於我們</a>
+        <a href="question.html">常見問題</a>
+        <a href="form.html">會員資訊</a> 
+    </div>
+    
+    <main class="advertise">
+        <div class="article">
+            <div class="slideshow-container slideshow-container-1">
+                <div class="mySlides mySlides-1 fade">
+                    <a href="#"><img src="img/ad-1.jpg" style="width: 80%"></a>
+                </div>
+                <div class="mySlides mySlides-1 fade">
+                    <a href="#"><img src="img/ad-2.jpg" style="width: 80%"></a>
+                </div>
+                <div class="mySlides mySlides-1 fade">
+                    <a href="#"><img src="img/ad-3.jpg" style="width: 80%"></a>
+                </div>
+                <div class="mySlides mySlides-1 fade">
+                    <a href="#"><img src="img/ad-4.jpg" style="width: 80%"></a>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <span class="dot dot-1" onclick="currentSlide(1, 1)"></span>
+                <span class="dot dot-1" onclick="currentSlide(2, 1)"></span>
+                <span class="dot dot-1" onclick="currentSlide(3, 1)"></span>
+                <span class="dot dot-1" onclick="currentSlide(4, 1)"></span>
+            </div>
+        </div>
+    </main>
+    
+ 
+    
+    <main class="new_product" id="new" >
+        <h1>新上架</h1>
+        <div id="ContentDetail" class="detail"></div>
+        <div class="see_more">
+            <a href="#查看更多">查看更多</a>
+        </div>
+    </main>
+    
+ 
+    
+    <main class="hot_items" id="hot_product">
+        <h1>熱銷商品</h1>
+            <div class="sellproduct">
+    
+                <div class="photo">
+                    <img src="img/p4-1.jpg">
+                </div>
+                <a href="#"><div class="text">
+                    <p>經典WAL 刺繡老帽&emsp;&emsp;<p>
+                    <p class="amount">本月銷量 130</p>
+                    <p class="price">$ 880</p></a>
+                </div>
+            </div>
+            <div class="sellproduct">
+                <div class="photo">
+                    <img src="img/p1-3.jpg">
+                </div>
+                <a href="#"><div class="text">
+                    <p>Dinotaeng 手機支架&emsp;&emsp;</p>
+                    <p class="amount">本月銷量 95</p>
+                    <p class="price">$ 599</p></a>
+                </div>
+            </div>
+            <div class="sellproduct">
+                <div class="photo">
+                    <img src="img/p1-5.jpg">
+                </div>
+                <a href="#"><div class="text">
+                    <p>Second Morning 耳機殼</p>
+                    <p class="amount">本月銷量 80</p>
+                    <p class="price">$ 550</p></a>
+                </div>
+            </div>
+            
+        
+        
+        
+        <div class="see_more">
+            <a href="#查看更多">查看更多</a>
+        </div>
+    </main>
+    
+    <script src="b1.js"></script>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <img src="image/top.png" alt="Top">
+    </button>
+    <script src="top.js"></script>
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+        
+    </script> 
+     <footer>
+        <p>Copyrgiht @ 2024  </p>
+        <p>Tel :</p> 
+    </footer>
+</body>
+</html>
