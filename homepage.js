@@ -24,7 +24,7 @@ function setAutoPlay() {
     if(autoplay != undefined) clearInterval(autoplay);
     autoplay = setInterval(function() {
         changeSlide(1);
-    }, 2500);
+    }, 4000);
 }
 const itemObj = {
     0: {name: 'LEE 24SS 老帽', price: '950', img: 'img/p4-2.jpg', url: '#'},
