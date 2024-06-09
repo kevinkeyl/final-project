@@ -5,7 +5,7 @@ body {
     background-color: #FAF9EC;
 }
 main {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 .navbar {
     width: 100%;
@@ -111,6 +111,7 @@ footer {
     text-align: center;
     font-size: 32px;
     font-weight: bold;
+    margin: 20px;
     padding: 0 0 20px 0;
     color: #2c2b2b;
 }
