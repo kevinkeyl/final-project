@@ -9,14 +9,16 @@
             background-image: url('image/background3.jpg');
             font-family: Arial, sans-serif;
             margin: 0;
-            margin: auto 30% 20% 30%;
+            
             padding: 0;
         }
         h1{
             text-align: center;
         }
         h3,h3.p{
-            text-align: center;
+            text-align: left;
+            margin:30px;
+            color: rgb(18, 97, 97);
         }
         ul{
             text-align: center;
@@ -40,7 +42,8 @@
         }
         .about-us {
             width: 80%;
-            margin: 0 auto;
+            margin: 0 300px;
+            width: 60%;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -52,10 +55,24 @@
         p {
             color: #666;
         }
+        .title2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            background-color: azure;
+        }
+        .logo{
+            max-width: 100px; /* Set maximum width for the logo */
+            height: auto;
+        }
     </style>
     
 </head>
 <body>
+    <nav class="title2">
+        <h2 style="text-align: center;"><a href="b1.html"><img src="image/logo.jpg" alt="" class="logo"></a></h2>
+    </nav>
     <div class="about-us">
         <header class="header">
             <h1>關於我們</h1>
@@ -69,7 +86,7 @@
             <ul>
                 <li>韓國時尚服飾代購</li>
                 <li>韓國美妝護膚品代購</li>
-                <li>韓國電子產品代購</li>
+                <li>韓國特色商品代購</li>
                 <li>韓國穿搭配件代購</li>
             </ul>
         </section>
