@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
     // 檢查頁面加載時 URL 中是否有 hash 值，如果沒有則手動設置為 #tab-1
     if (!window.location.hash) {
         window.location.hash = '#tab-1';
-    }
+    } 
 });
 const itemObj0 = {
     0: {name: 'Dinotaeng 聯名款安全帽', price: '1499', img: 'img/p1-8.jpg', url: '#'},
