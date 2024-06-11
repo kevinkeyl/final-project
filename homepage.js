@@ -29,7 +29,7 @@ function setAutoPlay() {
 const itemObj = {
     0: {name: 'LEE 24SS 老帽', price: '950', img: 'img/p4-2.jpg', url: '#'},
     1: {name: 'Marithe 襪子三入組', price: '680', img: 'img/p4-4.jpg', url: '#'},
-    2: {name: 'Dinotaeng卡夾 零錢包', price: '650', img: 'img/p1-1.jpg', url: '#'}
+    2: {name: 'Dinotaeng卡夾 零錢包', price: '650', img: 'img/p1-1.jpg', url: 'korean1-1.html'}
 };
 function generateItems(itemObj, containerId) {
     let objlength = Object.keys(itemObj).length;
