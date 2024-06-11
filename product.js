@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
     } 
 });
 const itemObj0 = {
-    0: {name: 'Dinotaeng 聯名款安全帽', price: '1499', img: 'img/p1-8.jpg', url: '#'},
+    0: {name: 'Dinotaeng 聯名款安全帽', price: '1499', img: 'img/p1-8.jpg', url: 'korean1-8.html'},
     1: {name: 'Dinotaeng 小夜燈', price: '850', img: 'img/p1-9.jpg', url: '#'},
     2: {name: 'Dinotaeng 卡夾 零錢包', price: '650', img: 'img/p1-1.jpg', url: '#'},
     3: {name: 'Dinotaeng 棉花糖平板包', price: '1200', img: 'img/p1-2.jpg', url: '#'},
@@ -44,7 +44,7 @@ const itemObj0 = {
 
 };
 const itemObj1 = {
-    0: {name: 'Dinotaeng 聯名款安全帽', price: '1499', img: 'img/p1-8.jpg', url: '#'},
+    0: {name: 'Dinotaeng 聯名款安全帽', price: '1499', img: 'img/p1-8.jpg', url: 'korean1-8.html'},
     1: {name: 'Dinotaeng 小夜燈', price: '850', img: 'img/p1-9.jpg', url: '#'},
     2: {name: 'Dinotaeng 卡夾 零錢包', price: '650', img: 'img/p1-1.jpg', url: '#'},
     3: {name: 'Dinotaeng 棉花糖平板包', price: '1200', img: 'img/p1-2.jpg', url: '#'},
