@@ -24,9 +24,9 @@ const itemObj0 = {
     1: {name: 'Dinotaeng 小夜燈', price: '850', img: 'img/p1-9.jpg', url: 'korean1-9.html'},
     2: {name: 'Dinotaeng 卡夾 零錢包', price: '650', img: 'img/p1-1.jpg', url: 'korean1-1.html'},
     3: {name: 'Dinotaeng 棉花糖平板包', price: '1200', img: 'img/p1-2.jpg', url: 'korean1-2.html'},
-    4: {name: 'Dinotaeng 手機支架', price: '460', img: 'img/p1-3.jpg', url: '#'},
+    4: {name: 'Dinotaeng 手機支架', price: '460', img: 'img/p1-3.jpg', url: 'korean1-3.html'},
     5: {name: 'Second Morning 手機殼', price: '599', img: 'img/p1-4.jpg', url: '#'},
-    6: {name: 'Second Morning 耳機殼 ', price: '550', img: 'img/p1-5.jpg', url: '#'},
+    6: {name: 'Second Morning 耳機殼 ', price: '550', img: 'img/p1-5.jpg', url: 'korean1-5.html'},
     7: {name: 'Second Morning 平板 / 筆電包', price: '1200', img: 'img/p1-6.jpg', url: '#'},
     8: {name: 'Second Morning 吊飾耳機殼', price: '790', img: 'img/p1-7.jpg', url: '#'},
     9: {name: 'EPT COURT 經典黑白 板鞋', price: '3950', img: 'img/p2-1.jpg', url: '#'},
@@ -34,10 +34,10 @@ const itemObj0 = {
     11: {name: 'NERDY 23SS Poach 經典板鞋', price: '1880', img: 'img/p2-3.jpg', url: '#'},
     12: {name: 'LEE 帆布袋', price: '1280', img: 'img/p3-1.jpg', url: '#'},
     13: {name: 'NEIKIDNIS Mesh String後背包', price: '1650', img: 'img/p3-2.jpg', url: '#'},
-    14: {name: 'WOOALONG 經典刺繡老帽', price: '880', img: 'img/p4-1.jpg', url: '#'},
-    15: {name: 'LEE 24SS老帽', price: '950', img: 'img/p4-2.jpg', url: '#'},
+    14: {name: 'WOOALONG 經典刺繡老帽', price: '880', img: 'img/p4-1.jpg', url: 'korean4-1.html'},
+    15: {name: 'LEE 24SS老帽', price: '950', img: 'img/p4-2.jpg', url: 'korean4-2.html'},
     16: {name: 'Marithe 24SS老帽', price: '1180', img: 'img/p4-3.jpg', url: '#'},
-    17: {name: 'Marithe 襪子三入組', price: '680', img: 'img/p4-4.jpg', url: '#'},
+    17: {name: 'Marithe 襪子三入組', price: '680', img: 'img/p4-4.jpg', url: 'korean4-4.html'},
     18: {name: 'LEE 刺繡小標襪子 ', price: '199', img: 'img/p4-5.jpg', url: '#'},
     19: {name: 'RECLOW RC B26韓國眼鏡', price: '980', img: 'img/p4-6.jpg', url: '#'},
     20: {name: 'RECLOW RC B019黑框眼鏡', price: '1280', img: 'img/p4-7.jpg', url: '#'}
@@ -48,9 +48,9 @@ const itemObj1 = {
     1: {name: 'Dinotaeng 小夜燈', price: '850', img: 'img/p1-9.jpg', url: 'korean1-9.html'},
     2: {name: 'Dinotaeng 卡夾 零錢包', price: '650', img: 'img/p1-1.jpg', url: 'korean1-1.html'},
     3: {name: 'Dinotaeng 棉花糖平板包', price: '1200', img: 'img/p1-2.jpg', url: 'korean1-2.html'},
-    4: {name: 'Dinotaeng 手機支架', price: '460', img: 'img/p1-3.jpg', url: '#'},
+    4: {name: 'Dinotaeng 手機支架', price: '460', img: 'img/p1-3.jpg', url: 'korean1-3.html'},
     5: {name: 'Second Morning 手機殼', price: '599', img: 'img/p1-4.jpg', url: '#'},
-    6: {name: 'Second Morning 耳機殼 ', price: '550', img: 'img/p1-5.jpg', url: '#'},
+    6: {name: 'Second Morning 耳機殼 ', price: '550', img: 'img/p1-5.jpg', url: 'korean1-5.html'},
     7: {name: 'Second Morning 平板 / 筆電包', price: '1200', img: 'img/p1-6.jpg', url: '#'},
     8: {name: 'Second Morning 吊飾耳機殼', price: '790', img: 'img/p1-7.jpg', url: '#'}
    
@@ -66,10 +66,10 @@ const itemObj3 = {
     1: {name: 'NEIKIDNIS 後背包', price: '1650', img: 'img/p3-2.jpg', url: '#'}
 };
 const itemObj4 = {
-    0: {name: 'WOOALONG 經典刺繡老帽', price: '880', img: 'img/p4-1.jpg', url: '#'},
-    1: {name: 'LEE 24SS老帽', price: '950', img: 'img/p4-2.jpg', url: '#'},
+    0: {name: 'WOOALONG 經典刺繡老帽', price: '880', img: 'img/p4-1.jpg', url: 'korean4-1.html'},
+    1: {name: 'LEE 24SS老帽', price: '950', img: 'img/p4-2.jpg', url: 'korean4-2.html'},
     2: {name: 'Marithe 24SS老帽', price: '1180', img: 'img/p4-3.jpg', url: '#'},
-    3: {name: 'Marithe 襪子三入組', price: '680', img: 'img/p4-4.jpg', url: '#'},
+    3: {name: 'Marithe 襪子三入組', price: '680', img: 'img/p4-4.jpg', url: 'korean4-4.html'},
     4: {name: 'LEE 刺繡小標襪子 ', price: '199', img: 'img/p4-5.jpg', url: '#'},
     5: {name: 'RECLOW RC B26韓國眼鏡', price: '980', img: 'img/p4-6.jpg', url: '#'},
     6: {name: 'RECLOW RC B019黑框眼鏡', price: '1280', img: 'img/p4-7.jpg', url: '#'},
