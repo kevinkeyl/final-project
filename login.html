@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body{
+            background-color: #CDD1BF;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            background-color: azure;
+        }
+        .logo{
+            max-width: 100px; /* Set maximum width for the logo */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 style="text-align: center;"><a href="homepage.html"><img src="img/logo.jpg" alt="" class="logo"></a></h2>
+    </nav>
+    <form action="" class="login">
+        <h1>登入</h1>
+        <i class="fa"></i>
+        <h2>帳號</h2>
+        <input type="text" id="password" placeholder="請輸入帳號">
+        <h2>密碼</h2>
+        <input type="password" placeholder="請輸入密碼">
+        <input type="checkbox">記住帳號及密碼
+        <h3 style="text-align: right; font-size: 12px; color: black; font-weight: bolder;text-decoration: underline;"><a href="inside.html">還不是會員 立刻註冊</a></h3>
+        <button type="submit" id="inside" onclick="an()"><a href="homepage.html">登入</a></button>
+        
+    </form>
+    <script>
+        function an(){
+            alert("登入成功");
+        }
+    </script>
+</body>
+</html>
