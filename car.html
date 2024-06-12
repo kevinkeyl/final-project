@@ -76,14 +76,14 @@
                     <p>Price: $650.00</p>
                     <button onclick="addToCart('Dinotaeng 卡夾 零錢包', 650.00)">加入購物車</button>
                 </div>
-                <a href="korean1-1.html"><img src="img/p1-1" alt="Product 3"></a>
+                <a href="korean1-1.html"><img src="img/p1-1.jpg" alt="Product 3"></a>
             </div>
         </div>
 
         <div id="cart" class="cart">
             <h2 style="text-align: right;">品項/售價:</h2>
             <div id="cart-items"></div>
-            <div class="total" id="total">總金額: $0.00</div>
+            <div class="total" id="total">總金額: $3479.00</div>
             <div class="submit">
                 <button type="submit" id="inside" onclick="an()"><a href="delivermap.html">確認訂單</a></button>
             </div>
@@ -91,36 +91,6 @@
     </div>
 
     <script>
-        let cart = [];
-        
-        function addToCart(productName, productPrice) {
-            const product = cart.find(item => item.name === productName);
-            if (product) {
-                product.quantity += 1;
-            } else {
-                cart.push({ name: productName, price: productPrice, quantity: 1 });
-            }
-            renderCart();
-        }
-        
-        function renderCart() {
-            const cartItems = document.getElementById('cart-items');
-            cartItems.innerHTML = '';
-            let total = 0;
-            
-            cart.forEach(item => {
-                const cartItem = document.createElement('div');
-                cartItem.className = 'cart-item';
-                cartItem.innerHTML = `
-                    <span>${item.name} x ${item.quantity}</span>
-                    <span>$${(item.price * item.quantity).toFixed(2)}</span>
-                `;
-                cartItems.appendChild(cartItem);
-                total += item.price * item.quantity;
-            });
-            
-            document.getElementById('total').textContent = `總金額: $${total.toFixed(2)}`;
-        }
         function an(){
             alert("請填寫送貨資訊!");
         }
