@@ -8,20 +8,19 @@
         body {
             font-family: Arial, sans-serif;
             font-size: 20px;
-            background-color: #CDD1BF;
-            padding:0 ;
+            background-color: #FAF9EC;
+            padding: 0;
+            margin: 0;
         }
-        .faq{
-          
+        .faq {
             border-radius: 5%;
             width: 80%;
-            
-            margin: auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .contact{
+        .contact {
             background-color: rgb(138, 97, 131);
             text-align: center;
             font-family: Arial, sans-serif;
@@ -31,68 +30,108 @@
             left: 0;
             padding: 10px;
         }
-        .contact.h2{
+        .contact h2 {
             font-size: small;
         }
-        nav{
+        nav {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 0px;
             background-color: azure;
         }
-        .logo{
-            max-width: 100px; /* Set maximum width for the logo */
+        .logo {
+            max-width: 100px;
             height: auto;
         }
-        footer{
-             background-color: #E8EAD9;
-             color: white;
-             text-align: center;
+        footer {
+            background-color: #E8EAD9;
+            color: white;
+            text-align: center;
             padding: 10px;
             font-family: Arial;
-}
+        }
+        .navbar {
+            width: 100%;
+            background-color: #E8EAD9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            margin: 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            padding-right: 30px;
+            color: #333;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .icon-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-container {
+            padding-left: 30px;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <h2 style="text-align: center;"><a href="homepage.html"><img src="img/logo.jpg" alt="" class="logo"></a></h2>
-    </nav>
+    <div class="navbar">
+        <div class="icon-container search-container input">
+            <img src="img/search.png" class="icon">
+            <input type="text" placeholder="關鍵字搜尋">
+        </div>
+        <div class="nav-links">
+            <a href="login.html">
+                <div class="icon-container">
+                    <img src="img/usericon.png" class="icon">登入 / 註冊
+                </div>
+            </a>
+            <a href="car.html">
+                <div class="icon-container">
+                    <img src="img/shopicon.png" class="icon">購物車
+                </div>
+            </a>
+        </div>
+    </div>
+
     <div class="faq">
         <header class="header">
-            <h1 style=" color: firebrick;">常見問題</h1>
+            <h1 style="color: firebrick;">常見問題</h1>
         </header>
-
         <div class="question">
             <h2>Q1: 如何進行代購訂單？</h2>
             <p>您可以通過我們的網站選擇您喜愛的韓國商品，並添加到購物車，然後按照結帳流程完成訂單。</p>
         </div>
-
         <div class="question">
             <h2>Q2: 代購商品的運輸時間是多久？</h2>
             <p>一般情況下，代購商品的運輸時間為7到14個工作日，但具體時間取決於物流狀況和目的地國家的海關流程。</p>
         </div>
-
         <div class="question">
             <h2>Q3: 代購商品的運費如何計算？</h2>
             <p>運費取決於商品的重量和體積以及目的地國家。在結帳時系統會自動計算運費，並在支付前顯示給您確認。</p>
         </div>
-
         <div class="question">
             <h2>Q4: 可以使用哪些支付方式？</h2>
             <p>我們接受多種支付方式，包括信用卡、PayPal和銀行轉帳。詳細信息請參閱我們的支付說明頁面。</p>
         </div>
-
         <div class="question">
             <h2>Q5: 如果收到的商品有問題，我該怎麼辦？</h2>
             <p>如果您收到的商品有任何問題，請在收到商品後7天內聯繫我們的客服團隊，我們將協助您解決問題。</p>
         </div>
     </div>
+
     <footer>
-        <p>Copyrgiht @ 2024  </p>
-       
+        <p>Copyright @ 2024</p>
     </footer>
-    
-    
 </body>
 </html>

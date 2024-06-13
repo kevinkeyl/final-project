@@ -26,7 +26,7 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            background-color: #CDD1BF;
+            background-color: #FAF9EC;
         }
         .login{
             position: fixed;
@@ -78,12 +78,58 @@
             max-width: 100px; /* Set maximum width for the logo */
             height: auto;
         }
+        .navbar {
+            width: 100%;
+            background-color: #E8EAD9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            margin: 0;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            padding-right: 30px;
+            color: #333;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        .icon-container {
+            display: flex;
+            align-items: center;
+        }
+        .search-container {
+            padding-left: 30px;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <h2 style="text-align: center;"><a href="homepage.html"><img src="img/logo.jpg" alt="" class="logo"></a></h2>
-    </nav>
+    <div class="navbar">
+        <div class="icon-container search-container input">
+            <img src="img/search.png" class="icon">
+            <input type="text" placeholder="關鍵字搜尋">
+        </div>
+        <div class="nav-links">
+            <a href="login.html">
+                <div class="icon-container">
+                    <img src="img/usericon.png" class="icon">登入 / 註冊
+                </div>
+            </a>
+            <a href="car.html">
+                <div class="icon-container">
+                    <img src="img/shopicon.png" class="icon">購物車
+                </div>
+            </a>
+        </div>
+    </div>
     <form action="" class="login">
         <h1> 註冊 Sign Up</h1>
         <i class="fa"></i>
