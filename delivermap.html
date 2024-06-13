@@ -7,7 +7,11 @@
     <style>
         body{
             background-color: #FAF9EC;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
+        
         h3{
             text-align: center;
         }
@@ -69,6 +73,28 @@
         .search-container {
             padding-left: 30px;
         }
+        .shoptitle a{
+            display: flex;
+            text-align: center;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c2b2b;
+
+        }
+        .shoptitle a:hover{
+         text-decoration: none;
+            color: #2c2b2b;
+        }
+        footer {
+            width: 100%;
+            background-color: #E8EAD9;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial;
+            margin-top: auto; /* Push the footer to the bottom */
+        }
     </style>
 </head>
 <body>
@@ -76,6 +102,9 @@
         <div class="icon-container search-container input">
             <img src="img/search.png" class="icon">
             <input type="text" placeholder="關鍵字搜尋">
+        </div>
+        <div class="shoptitle">
+            <a href="homepage.html">Korean Shop</a>
         </div>
         <div class="nav-links">
             <a href="login.html">
@@ -108,6 +137,10 @@
     <input type="text" placeholder="名字"><br>
     <button type="submit" id="inside" onclick="an()"><a href="homepage.html">確認送出</a></button>
     </div>
+    <footer>
+        <p>Copyrgiht @ 2024  </p>
+        <p>Tel :</p> 
+    </footer>
     <script>
          function an(){
             alert("訂單完成! 歡迎下次光臨");
