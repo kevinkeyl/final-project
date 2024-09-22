@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老人助步器監控網站</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    #preset-buttons {
+        margin-top: 10px;
+    }
+</style>
+<link rel="stylesheet" href="styles..css">
+</head>
+<body>
+  <header>
+    <h1>老人助步器監控網站</h1>
+  </header>
+  <main>
+    <section id="gps">
+      <h2>GPS 定位</h2>
+      <div id="gps-data">
+        <p id="gps-info">等待定位資訊...</p>
+      </div>
+    </section>
+   
+    <section id="health-monitor">
+      <h2>健康監控</h2>
+      <div id="health-info">
+        <p id="heart-rate">心率: 等待數據...</p>
+       
+        <p id="medication-reminder">藥物提醒: 吃藥倒數2小時</p>
+        <p id="high-heart-rate-warning">心率過高警告: 等待設定...</p>
+      </div>
+    </section>
+    <section id="environment-monitor">
+      <h2>環境監控</h2>
+      <div id="environment-info">
+        <p id="temperature">溫度: 等待數據...</p>
+        <p id="smoke">煙霧狀況: 等待數據...</p>
+        
+      </div>
+    </section>
+   
+      <section id="voice-messages">
+        <h2>發送語音提示</h2>
+        <textarea id="voice-message" placeholder="輸入提示消息"></textarea>
+        <button onclick="sendVoiceMessage()">發送</button>
+        <div id="preset-buttons">
+          <button onclick="sendPresetMessage('現在是吃藥時間')">吃藥時間</button>
+          <button onclick="sendPresetMessage('請多喝開水')">多喝開水</button>
+          <button onclick="sendPresetMessage('請保持運動')">保持運動</button>
+          <button onclick="sendPresetMessage('請注意休息')">注意休息</button>
+        </div>
+      </section>
+      
+  </main>
+  
+  <script src="script..js"></script>
+</body>
+</html>

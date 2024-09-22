@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* 淺灰色背景 */
+}
+
+header {
+    background-color: #4fe69f; /* 綠色 */
+    color: #fff; /* 白色文字 */
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #4b5669; /* 白色主區塊 */
+    border-radius: 8px; /* 圓角邊框 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 輕微陰影 */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* 淡灰色區塊背景 */
+    border: 1px solid #ddd; /* 淺灰色邊框 */
+    border-radius: 4px; /* 圓角邊框 */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* 深灰色標題文字 */
+}
+
+#gps-data, #health-info, #environment-info {
+    padding: 10px;
+    border: 1px solid #ccc; /* 灰色邊框 */
+    border-radius: 4px; /* 圓角邊框 */
+}
+
+footer {
+    background-color: #333; /* 深灰色背景 */
+    color: #fff; /* 白色文字 */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* 灰色邊框 */
+    border-radius: 4px; /* 圓角邊框 */
+    resize: vertical;
+}
+
+button {
+    background-color: #2c9247e6; /* 綠色按鈕 */
+    color: white; /* 白色文字 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px; /* 圓角邊框 */
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: #173519; /* 深綠色懸停按鈕 */
+}

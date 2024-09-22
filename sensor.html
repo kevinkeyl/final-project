@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>助步器監控</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>助步器監控</h1>
+    </header>
+    <main>
+        <section id="health-data" class="card">
+            <h2>實時健康數據</h2>
+            <div id="live-data">
+                <!-- 實時數據將通過JavaScript動態填充 -->
+            </div>
+        </section>
+        <section id="history-data" class="card">
+            <h2>歷史數據</h2>
+            <div id="historical-data">
+                <!-- 歷史數據將通過JavaScript動態填充 -->
+            </div>
+        </section>
+        <section id="alerts" class="card">
+            <h2>警報</h2>
+            <div id="alert-messages">
+                <!-- 警報消息將通過JavaScript動態填充 -->
+            </div>
+        </section>
+        <section id="voice-assistant" class="card">
+            <h2>發送語音提示</h2>
+            <textarea id="voice-message" placeholder="輸入提示消息"></textarea>
+            <button onclick="sendVoiceMessage()">發送</button>
+            <div id="preset-buttons">
+                <button onclick="sendPresetMessage('現在是吃藥時間')">吃藥時間</button>
+                <button onclick="sendPresetMessage('請多喝開水')">多喝開水</button>
+                <button onclick="sendPresetMessage('請保持運動')">保持運動</button>
+                <button onclick="sendPresetMessage('請注意休息')">注意休息</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
